@@ -1,0 +1,14 @@
+{
+    "name": "ESP32 Test Firmware Print",
+    "builds": [
+      {
+        "chipFamily": "ESP32",
+        "improv": false,
+        "parts": [
+          { "path": "firmware/esp32/test/bootloader.bin", "offset": 4096 },
+          { "path": "firmware/esp32/test/partition-table.bin", "offset": 32768 },
+          { "path": "firmware/esp32/test/hello_world.bin", "offset": 65536 }
+        ]
+      }
+    ]
+  }

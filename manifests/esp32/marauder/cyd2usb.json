@@ -1,0 +1,14 @@
+{
+    "name": "CM-Box Marauder v1.2.0 2USB",
+    "builds": [
+      {
+        "chipFamily": "ESP32",
+        "improv": false,
+        "parts": [
+          { "path": "https://raw.githubusercontent.com/ATOMNFT/CM-Box/refs/heads/main/web/(CMBOX_1.2.0_2USB)_esp32_marauder.ino.bootloader.bin", "offset": 4096 },
+          { "path": "https://raw.githubusercontent.com/ATOMNFT/CM-Box/refs/heads/main/web/(CMBOX_1.2.0_2USB)_esp32_marauder.ino.partitions.bin", "offset": 32768 },
+          { "path": "https://raw.githubusercontent.com/ATOMNFT/CM-Box/refs/heads/main/web/(CMBOX_1.2.0_2USB)_esp32_marauder.ino.bin", "offset": 65536 }
+        ]
+      }
+    ]
+  }

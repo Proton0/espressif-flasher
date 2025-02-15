@@ -1,0 +1,211 @@
+/* Global body styling */
+:root {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  background: #000000; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #000000, #434343);
+  background: linear-gradient(to right, #000000, #434343);
+  color: #ffffff;
+}
+
+/* Center container for the search engine */
+#search_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+#search_container h1 {
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+/* Search engine area */
+#search_engine {
+  position: relative;
+  width: 600px;
+  max-width: 90%;
+  margin: 2rem auto; /* increased vertical margin for emphasis */
+}
+
+#search_engine_input {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 2rem;
+  outline: none;
+  background: rgba(0, 0, 0, 0.4); /* dark and semi-transparent */
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  box-shadow: none; /* minimal style */
+}
+
+#search_engine_input:not(:placeholder-shown) {
+  /* Remove bottom border radius when suggestions are shown */
+  border-radius: 2rem 2rem 0 0;
+  /* Optionally remove the bottom border to avoid double borders */
+  border-bottom: none;
+}
+
+/* Suggestions dropdown */
+#search_engine_suggestions {
+  position: absolute;
+  top: 60px; /* Enough space below the input */
+  width: 100%;
+  background: rgba(0, 0, 0, 0.35); /* dark and transparent */
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: none; /* minimalist style */
+  border-radius: 0 0 2rem 2rem;
+  max-height: 300px;
+  overflow-y: auto;
+  display: none; /* Hidden by default; we’ll show it when there’s content */
+}
+
+/* Show suggestions only when there's text (handled in JS) */
+#search_engine_suggestions table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#search_engine_suggestions table th,
+#search_engine_suggestions table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+#search_engine_suggestions table tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+}
+
+/* Reveal suggestions if there's at least one firmware match */
+#search_engine_input:not(:placeholder-shown) + #search_engine_suggestions {
+  display: block;
+  /* Add a white line on the top to separate from the input */
+  border-top: 1px solid #fff;
+}
+
+/* Footer styling */
+#footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+}
+
+#footer .left,
+#footer .right {
+  display: flex;
+  align-items: center;
+}
+
+#footer a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 1rem;
+  padding: 0.5rem;
+  padding-right: 20px;
+}
+
+#footer button {
+  padding: 0.4rem 0.8rem;
+  background: #333;
+  border: 1px solid #555;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#footer button:hover {
+  background: #444;
+}
+
+/* Console section */
+#console {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #555;
+  padding: 1rem;
+  margin: 2rem auto;
+  width: 80%;
+  border-radius: 4px;
+}
+
+#console-input {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+#console-input p {
+  margin: 0.2rem 0;
+}
+
+#console-input-baudrate {
+  width: 80px;
+  padding: 0.3rem;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid #555;
+  color: #fff;
+  border-radius: 4px;
+  outline: none;
+}
+
+#console-input-text {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #555;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+}
+
+#console-input-button {
+  padding: 0.5rem 1rem;
+  border: 1px solid #555;
+  background: #333;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+  transition: background 0.2s;
+}
+
+#console-input-button:hover {
+  background: #444;
+}
+
+#console-output {
+  max-height: 200px;
+  overflow-y: auto;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 0.5rem;
+  border: 1px solid #555;
+  border-radius: 4px;
+}
+
+#console-output p {
+  margin: 0.5rem 0;
+}
+
+/* Own Firmware Flash Menu styling */
+#own_firmware_menu {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid #555;
+  padding: 1rem;
+  border-radius: 4px;
+}

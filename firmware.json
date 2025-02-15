@@ -1,0 +1,23 @@
+[
+    {
+        "name": "ESP32 Marauder (CYD)",
+        "version": "1.2.0",
+        "author": "ATOMNFT + JustMeKoko",
+        "manifest": "manifests/esp32/marauder/cyd.json",
+        "device": "ESP32 CYD"
+    },
+    {
+        "name": "ESP32 Marauder (CYD2USB)",
+        "version": "1.2.0",
+        "author": "ATOMNFT + JustMeKoko",
+        "manifest": "manifests/esp32/marauder/cyd2usb.json",
+        "device": "ESP32 CYD2USB"
+    },
+    {
+        "name": "ESP32 Test Firmware",
+        "version": "0.1.0",
+        "author": "Proton0",
+        "manifest": "manifests/esp32/test/print.json",
+        "device": "ESP32"
+    }
+]

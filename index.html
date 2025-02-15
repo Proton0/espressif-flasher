@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Espressif Flasher</title>
+  <!-- Link to updated CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Updated JS -->
+  <script src="js/main.js" type="module"></script>
+</head>
+<body>
+  <!-- Centered container for the search engine -->
+  <div id="search_container">
+    <h1>Espressif Flasher</h1>
+    <div id="search_engine">
+      <input
+        type="text"
+        id="search_engine_input"
+        placeholder="Search a firmware"
+        autocomplete="off"
+      />
+      <div id="search_engine_suggestions">
+        <!-- We’ll generate the table dynamically in main.js -->
+        <table>
+          <tr>
+            <th>Firmware Name</th>
+            <th>Version</th>
+            <th>Author</th>
+            <th>Device</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Console (initially hidden) -->
+  <div id="console" style="display: none;">
+    <div id="console-input">
+      <div>
+        <p>Console Input</p>
+        <p>Baudrate</p>
+        <input
+          type="number"
+          id="console-input-baudrate"
+          placeholder="Baudrate"
+          value="115200"
+        />
+        <button onclick="connectSerial()">Connect</button>
+        <button onclick="disconnectConnectedSerial()">Disconnect</button>
+      </div>
+
+      <div style="flex: 1;">
+        <input
+          type="text"
+          id="console-input-text"
+          placeholder="Enter command"
+        />
+        <button id="console-input-button">Send</button>
+      </div>
+    </div>
+    
+
+    <div id="console-output">
+    </div>
+  </div>
+
+  <!-- Flash your own firmware menu (initially hidden) -->
+  <div id="own_firmware_menu" style="display: none; margin: 2rem auto; width: 80%; text-align: center;">
+    <h2>Flash Your Own Firmware</h2>
+    <!-- Button to add new partition rows -->
+    <button onclick="addPartitionRow()">Add Partition</button>
+    <table id="partition_table" style="margin: auto;">
+      <tr>
+        <th>Location</th>
+        <th>File</th>
+        <th>Delete</th>
+      </tr>
+    </table>
+    <p>Please put all the files in the correct order or your esp32 may get soft-bricked</p>
+    <p>It is optional to put a file in "0xE000" but if your firmware requires it then put it</p>
+    <br>
+    <button onclick="start_flash_custom()">Start flash</button>
+    
+  </div>
+
+  <!-- Footer -->
+  <div id="footer">
+    <div class="left">
+      <a href="https://example.com" target="_blank">Espressif Flasher</a>
+      <button onclick="showConsole()">Show console</button>
+      <button onclick="erase_flash()">Erase flash</button>
+      <button onclick="flashOwnFirmware()">Flash your own firmware</button>
+      <button onclick="showHideSearch()">Show/Hide Search</button>
+    </div>
+    <div class="right">
+      <a href="https://proton0.me" target="_blank">Made by Proton0</a>
+    </div>
+  </div>
+</body>
+</html>
