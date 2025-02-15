@@ -47,5 +47,103 @@
         "author": "JustMeKoko",
         "manifest": "manifests/esp32/marauder/flipper.json",
         "device": "Flipper Zero ESP32"
+    },
+    {
+        "name": "Bruce (Lilygo T Embed CC1011) ",
+        "version": "Latest (webpage)",
+        "author": "pr3y",
+        "device": "ESP32-S3",
+        "manifest": "manifests/esp32-S3/Bruce/Bruce (Lilygo T Embed CC1011).json"
+    },
+    {
+        "name": "Bruce (CYD2USB)",
+        "version": "Latest (webpage)",
+        "author": "pr3y",
+        "device": "ESP32",
+        "manifest": "manifests/esp32/Bruce/Bruce (CYD2USB).json"
+    },
+    {
+        "name": "Bruce (CYD)",
+        "version": "Latest (webpage)",
+        "author": "pr3y",
+        "device": "ESP32",
+        "manifest": "manifests/esp32/Bruce/Bruce (CYD).json"
+    },
+    {
+        "name": "Bruce (ESP32-S3 DevKitC)",
+        "version": "Latest (webpage)",
+        "author": "pr3y",
+        "device": "ESP32-S3",
+        "manifest": "manifests/esp32-S3/Bruce/Bruce (ESP32-S3 DevKitC).json"
+    },
+    {
+        "name": "Bruce (Lilygo T-Deck-Plus)",
+        "version": "Latest (webpage)",
+        "author": "pr3y",
+        "device": "ESP32-S3",
+        "manifest": "manifests/esp32-S3/Bruce/Bruce (Lilygo T-Deck-Plus).json"
+    },
+    {
+        "name": "Bruce (Lilygo T-Deck)",
+        "version": "Latest (webpage)",
+        "author": "pr3y",
+        "device": "ESP32-S3",
+        "manifest": "manifests/esp32-S3/Bruce/Bruce (Lilygo T-Deck).json"
+    },
+    {
+        "name": "Bruce (M5StickC Plus2)",
+        "version": "Latest (webpage)",
+        "author": "pr3y",
+        "device": "ESP32",
+        "manifest": "manifests/esp32/Bruce/Bruce (M5StickC Plus2).json"
+    },
+    {
+        "name": "Bruce (M5StickC Plus)",
+        "version": "Latest (webpage)",
+        "author": "pr3y",
+        "device": "ESP32",
+        "manifest": "manifests/esp32/Bruce/Bruce (ESP32 CYD (touch not working)).json"
+    },
+    {
+        "name": "Bruce (M5Stack Cardputer)",
+        "version": "Latest (webpage)",
+        "author": "pr3y",
+        "device": "ESP32-S3",
+        "manifest": "manifests/esp32-S3/Bruce/Bruce (M5Stack Cardputer).json"
+    },
+    {
+        "name": "Bruce (M5StickCPlus 1.1)",
+        "version": "Latest (webpage)",
+        "author": "pr3y",
+        "device": "ESP32",
+        "manifest": "manifests/esp32/Bruce/Bruce (M5StickCPlus 1.1).json"
+    },
+    {
+        "name": "Bruce Launcher (CYD2USB)",
+        "version": "Latest (webpage)",
+        "author": "pr3y",
+        "device": "ESP32",
+        "manifest": "manifests/esp32/Bruce Launcher/Bruce Launcher (CYD2USB).json"
+    },
+    {
+        "name": "Bruce Launcher (M5StickCPlus 1.1)",
+        "version": "Latest (webpage)",
+        "author": "pr3y",
+        "device": "ESP32",
+        "manifest": "manifests/esp32/Bruce Launcher/Bruce Launcher (M5StickCPlus 1.1).json"
+    },
+    {
+        "name": "Bruce Launcher (CYD)",
+        "version": "Latest (webpage)",
+        "author": "pr3y",
+        "device": "ESP32",
+        "manifest": "manifests/esp32/Bruce Launcher/Bruce Launcher (CYD).json"
+    },
+    {
+        "name": "Bruce Launcher (M5StickCPlus 1.1)",
+        "version": "Latest (webpage)",
+        "author": "pr3y",
+        "device": "esp32",
+        "manifest": "manifests/esp32/Bruce Launcher/Bruce Launcher (M5StickCPlus 1.1).json"
     }
 ]

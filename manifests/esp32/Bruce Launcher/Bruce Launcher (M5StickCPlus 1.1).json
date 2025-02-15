@@ -1,0 +1,15 @@
+{
+    "name": "M5StickCPlus 1.1",
+    "builds": [
+        {
+            "chipFamily": "ESP32",
+            "improv": false,
+            "parts": [
+                {
+                    "path": "https://raw.githubusercontent.com/pr3y/Bruce/refs/heads/WebPage/LastRelease/Bruce-LAUNCHER_m5stack-cplus1_1.bin",
+                    "offset": 0
+                }
+            ]
+        }
+    ]
+}
