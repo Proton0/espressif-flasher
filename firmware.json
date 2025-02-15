@@ -33,5 +33,19 @@
         "author": "Spacehuhn",
         "manifest": "manifests/esp8266/deauther/wesmosd1.json",
         "device": "ESP8266 Wesmos D1 Mini"
+    },
+    {
+        "name": "ESP32 Marauder (v4)",
+        "version": "1.2.1",
+        "author": "JustMeKoko",
+        "manifest": "manifests/esp32/marauder/marauder.json",
+        "device": "ESP32"
+    },
+    {
+        "name": "ESP32 Marauder (Flipper)",
+        "version": "1.2.1",
+        "author": "JustMeKoko",
+        "manifest": "manifests/esp32/marauder/flipper.json",
+        "device": "Flipper Zero ESP32"
     }
 ]

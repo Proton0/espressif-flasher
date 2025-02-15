@@ -1,0 +1,15 @@
+{
+    "name": "ESP32 Marauder (v4)",
+    "builds": [
+      {
+        "chipFamily": "ESP32",
+        "improv": false,
+        "parts": [
+          { "path": "firmware/esp32/marauder/v4/bootloader.bin", "offset": 4096 },
+          { "path": "firmware/esp32/marauder/v4/partitions.bin", "offset": 32768 },
+          { "path": "firmware/esp32/marauder/v4/boot_app0.bin", "offset": 57344 },
+          { "path": "firmware/esp32/marauder/v4/firmware.bin", "offset": 65536 }
+        ]
+      }
+    ]
+  }
