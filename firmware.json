@@ -19,5 +19,19 @@
         "author": "Proton0",
         "manifest": "manifests/esp32/test/print.json",
         "device": "ESP32"
+    },
+    {
+        "name": "ESP8266 Deauther",
+        "version": "2.6.1",
+        "author": "Spacehuhn",
+        "manifest": "manifests/esp8266/deauther/nodemcu.json",
+        "device": "ESP8266 NodeMCU"
+    },
+    {
+        "name": "ESP8266 Deauther",
+        "version": "2.6.1",
+        "author": "Spacehuhn",
+        "manifest": "manifests/esp8266/deauther/wesmosd1.json",
+        "device": "ESP8266 Wesmos D1 Mini"
     }
 ]

@@ -1,0 +1,12 @@
+{
+    "name": "ESP8266 deauther NodeMCU",
+    "builds": [
+      {
+        "chipFamily": "ESP8266",
+        "improv": false,
+        "parts": [
+          { "path": "firmware/esp8266/deauther/nodemcu.bin", "offset": 0 }
+        ]
+      }
+    ]
+  }

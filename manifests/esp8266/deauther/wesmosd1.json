@@ -1,0 +1,12 @@
+{
+    "name": "ESP8266 deauther Wesmos D1",
+    "builds": [
+      {
+        "chipFamily": "ESP8266",
+        "improv": false,
+        "parts": [
+          { "path": "firmware/esp8266/deauther/wesmosd1.bin", "offset": 0 }
+        ]
+      }
+    ]
+  }
