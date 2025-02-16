@@ -145,12 +145,26 @@
         "author": "pr3y",
         "device": "esp32",
         "manifest": "manifests/esp32/Bruce Launcher/Bruce Launcher (M5StickCPlus 1.1).json"
-    }, 
+    },
     {
         "name": "Espressif Flash Test Manifest",
         "version": "DO-NOT-FLASH",
         "author": "Proton0",
         "manifest": "manifests/test.json",
         "device": "ESP32"
+    },
+    {
+        "name": "WLED Plain",
+        "version": "0.15.0/2412100",
+        "author": "Aircoookie",
+        "device": "ESP32/ESP8266",
+        "manifest": "manifests/All ESP32/WLED Plain/WLED Plain (All ESP32).json"
+    },
+    {
+        "name": "WLED Ethernet",
+        "version": "0.15.0/2412100",
+        "author": "Aircoookie",
+        "device": "ESP32/ESP8266",
+        "manifest": "manifests/ESP32/ESP8266/WLED Ethernet/WLED Ethernet (All ESP32).json"
     }
 ]
