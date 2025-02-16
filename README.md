@@ -9,6 +9,9 @@ literally google for flashing espressif chips
 
 Just add the following entry to firmware.json then make a pull request
 
+or just run `create_manifest.py` and fill in the details
+
+
 ```json
 {
     "name": "Firmware Name",

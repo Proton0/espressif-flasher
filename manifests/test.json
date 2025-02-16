@@ -1,0 +1,75 @@
+{
+  "name": "Espressif Flasher Test Manifest",
+  "builds": [
+      {
+          "chipFamily": "ESP8266",
+          "improv": false,
+          "parts": [
+              { "path": "TEST-MANIFEST-THIS-IS-NOT-REAL-FIRMWARE", "offset": 0 }
+          ]
+      },
+      {
+          "chipFamily": "ESP8266EX",
+          "improv": false,
+          "parts": [
+              { "path": "TEST-MANIFEST-THIS-IS-NOT-REAL-FIRMWARE", "offset": 0 }
+          ]
+      },
+      {
+          "chipFamily": "ESP8266MOD",
+          "improv": false,
+          "parts": [
+              { "path": "TEST-MANIFEST-THIS-IS-NOT-REAL-FIRMWARE", "offset": 0 }
+          ]
+      },
+      {
+          "chipFamily": "ESP32",
+          "improv": false,
+          "parts": [
+              { "path": "TEST-MANIFEST-THIS-IS-NOT-REAL-FIRMWARE", "offset": 0 }
+          ]
+      },
+      {
+          "chipFamily": "ESP32-D0WDQ6",
+          "improv": false,
+          "parts": [
+              { "path": "TEST-MANIFEST-THIS-IS-NOT-REAL-FIRMWARE", "offset": 0 }
+          ]
+      },
+      {
+          "chipFamily": "ESP32-S2",
+          "improv": false,
+          "parts": [
+              { "path": "TEST-MANIFEST-THIS-IS-NOT-REAL-FIRMWARE", "offset": 0 }
+          ]
+      },
+      {
+          "chipFamily": "ESP32-S3",
+          "improv": false,
+          "parts": [
+              { "path": "TEST-MANIFEST-THIS-IS-NOT-REAL-FIRMWARE", "offset": 0 }
+          ]
+      },
+      {
+          "chipFamily": "ESP32-C3",
+          "improv": false,
+          "parts": [
+              { "path": "TEST-MANIFEST-THIS-IS-NOT-REAL-FIRMWARE", "offset": 0 }
+          ]
+      },
+      {
+          "chipFamily": "ESP32-C6",
+          "improv": false,
+          "parts": [
+              { "path": "TEST-MANIFEST-THIS-IS-NOT-REAL-FIRMWARE", "offset": 0 }
+          ]
+      },
+      {
+          "chipFamily": "ESP32-H2",
+          "improv": false,
+          "parts": [
+              { "path": "TEST-MANIFEST-THIS-IS-NOT-REAL-FIRMWARE", "offset": 0 }
+          ]
+      }
+  ]
+}
