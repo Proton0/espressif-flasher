@@ -47,10 +47,8 @@ def main():
 
     # Create necessary directories
     manifests_dir = os.path.join("manifests", chip, firmware_name)
-    firmwares_dir = os.path.join("firmwares", chip, firmware_name)
     try:
         os.makedirs(manifests_dir, exist_ok=True)
-        os.makedirs(firmwares_dir, exist_ok=True)
     except Exception as e:
         print(f"Failed to create directories: {e}")
         return

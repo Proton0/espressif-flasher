@@ -1,4 +1,4 @@
-/* Global body styling */
+/* Global body styling with fade-in animation */
 :root {
   margin: 0;
   padding: 0;
@@ -7,6 +7,18 @@
   background: -webkit-linear-gradient(to right, #000000, #434343);
   background: linear-gradient(to right, #000000, #434343);
   color: #ffffff;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 /* Center container for the search engine */
@@ -16,6 +28,7 @@
   align-items: center;
   margin-top: 5rem;
   text-align: center;
+  animation: fadeIn 0.8s ease-out;
 }
 
 #search_container h1 {
@@ -28,7 +41,7 @@
   position: relative;
   width: 600px;
   max-width: 90%;
-  margin: 2rem auto; /* increased vertical margin for emphasis */
+  margin: 2rem auto;
 }
 
 #search_engine_input {
@@ -38,38 +51,47 @@
   border: none;
   border-radius: 2rem;
   outline: none;
-  background: rgba(0, 0, 0, 0.4); /* dark and semi-transparent */
+  background: rgba(0, 0, 0, 0.4);
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(5px);
-  box-sizing: border-box; /* Ensures padding & borders don't affect size */
+  box-sizing: border-box;
+  transition: background 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
 }
 
 #search_engine_input:not(:placeholder-shown) {
-  /* Remove bottom border radius when suggestions are shown */
   border-radius: 2rem 2rem 0 0;
-  /* Optionally remove the bottom border to avoid double borders */
   border-bottom: none;
 }
 
-/* Suggestions dropdown */
+/* Suggestions dropdown with fadeInDown animation */
 #search_engine_suggestions {
-  box-sizing: border-box; /* Ensures padding & borders don't affect size */
+  box-sizing: border-box;
   position: absolute;
-  top: 60px; /* Enough space below the input */
+  top: 60px;
   width: 100%;
-  background: rgba(0, 0, 0, 0.35); /* dark and transparent */
+  background: rgba(0, 0, 0, 0.35);
   color: #fff;
   border: 1px solid rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
-  box-shadow: none; /* minimalist style */
+  box-shadow: none;
   border-radius: 0 0 2rem 2rem;
   max-height: 300px;
   overflow-y: auto;
-  display: none; /* Hidden by default; we’ll show it when there’s content */
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
 }
 
-/* Show suggestions only when there's text (handled in JS) */
+/* Show suggestions when there's text (JS handled) */
+#search_engine_input:not(:placeholder-shown) + #search_engine_suggestions {
+  opacity: 1;
+  pointer-events: auto;
+  border-top: 1px solid #fff;
+  animation: fadeInDown 0.3s ease-out;
+  display: block;
+}
+
 #search_engine_suggestions table {
   width: 100%;
   border-collapse: collapse;
@@ -87,16 +109,10 @@
 #search_engine_suggestions table tr:hover {
   background: rgba(255, 255, 255, 0.05);
   cursor: pointer;
+  transition: background 0.2s ease;
 }
 
-/* Reveal suggestions if there's at least one firmware match */
-#search_engine_input:not(:placeholder-shown) + #search_engine_suggestions {
-  display: block;
-  /* Add a white line on the top to separate from the input */
-  border-top: 1px solid #fff;
-}
-
-/* Footer styling */
+/* Footer styling with subtle entrance and hover effects */
 #footer {
   position: fixed;
   bottom: 0;
@@ -106,6 +122,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 1rem;
+  animation: fadeIn 1s ease-out;
 }
 
 #footer .left,
@@ -129,13 +146,15 @@
   color: #fff;
   border-radius: 4px;
   cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
 }
 
 #footer button:hover {
   background: #444;
+  transform: scale(1.05);
 }
 
-/* Console section */
+/* Console section with fadeIn animation */
 #console {
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid #555;
@@ -143,6 +162,7 @@
   margin: 2rem auto;
   width: 80%;
   border-radius: 4px;
+  animation: fadeIn 0.5s ease-out;
 }
 
 #console-input {
@@ -164,6 +184,7 @@
   color: #fff;
   border-radius: 4px;
   outline: none;
+  transition: background 0.3s ease, border 0.3s ease;
 }
 
 #console-input-text {
@@ -174,6 +195,7 @@
   color: #fff;
   border-radius: 4px 0 0 4px;
   outline: none;
+  transition: background 0.3s ease, border 0.3s ease;
 }
 
 #console-input-button {
@@ -183,11 +205,12 @@
   color: #fff;
   cursor: pointer;
   border-radius: 0 4px 4px 0;
-  transition: background 0.2s;
+  transition: background 0.2s, transform 0.2s;
 }
 
 #console-input-button:hover {
   background: #444;
+  transform: scale(1.05);
 }
 
 #console-output {
@@ -203,10 +226,11 @@
   margin: 0.5rem 0;
 }
 
-/* Own Firmware Flash Menu styling */
+/* Own Firmware Flash Menu styling with fadeIn */
 #own_firmware_menu {
   background: rgba(0, 0, 0, 0.4);
   border: 1px solid #555;
   padding: 1rem;
   border-radius: 4px;
+  animation: fadeIn 0.5s ease-out;
 }
