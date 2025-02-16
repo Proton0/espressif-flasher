@@ -98,13 +98,6 @@
         "manifest": "manifests/esp32/Bruce/Bruce (M5StickC Plus2).json"
     },
     {
-        "name": "Bruce (M5StickC Plus)",
-        "version": "Latest (webpage)",
-        "author": "pr3y",
-        "device": "ESP32",
-        "manifest": "manifests/esp32/Bruce/Bruce (ESP32 CYD (touch not working)).json"
-    },
-    {
         "name": "Bruce (M5Stack Cardputer)",
         "version": "Latest (webpage)",
         "author": "pr3y",
@@ -165,6 +158,6 @@
         "version": "0.15.0/2412100",
         "author": "Aircoookie",
         "device": "ESP32/ESP8266",
-        "manifest": "manifests/ESP32/ESP8266/WLED Ethernet/WLED Ethernet (All ESP32).json"
+        "manifest": "manifests/All ESP32/WLED Ethernet (All ESP32).json"
     }
 ]
