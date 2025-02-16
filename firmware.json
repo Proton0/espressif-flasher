@@ -53,7 +53,7 @@
         "version": "Latest (webpage)",
         "author": "pr3y",
         "device": "ESP32-S3",
-        "manifest": "manifests/esp32-S3/Bruce/Bruce (Lilygo T Embed CC1011).json"
+        "manifest": "manifests/ESP32-S3/Bruce/Bruce (Lilygo T Embed CC1011).json"
     },
     {
         "name": "Bruce (CYD2USB)",
@@ -74,21 +74,21 @@
         "version": "Latest (webpage)",
         "author": "pr3y",
         "device": "ESP32-S3",
-        "manifest": "manifests/esp32-S3/Bruce/Bruce (ESP32-S3 DevKitC).json"
+        "manifest": "manifests/ESP32-S3/Bruce/Bruce (ESP32-S3 DevKitC).json"
     },
     {
         "name": "Bruce (Lilygo T-Deck-Plus)",
         "version": "Latest (webpage)",
         "author": "pr3y",
         "device": "ESP32-S3",
-        "manifest": "manifests/esp32-S3/Bruce/Bruce (Lilygo T-Deck-Plus).json"
+        "manifest": "manifests/ESP32-S3/Bruce/Bruce (Lilygo T-Deck-Plus).json"
     },
     {
         "name": "Bruce (Lilygo T-Deck)",
         "version": "Latest (webpage)",
         "author": "pr3y",
         "device": "ESP32-S3",
-        "manifest": "manifests/esp32-S3/Bruce/Bruce (Lilygo T-Deck).json"
+        "manifest": "manifests/ESP32-S3/Bruce/Bruce (Lilygo T-Deck).json"
     },
     {
         "name": "Bruce (M5StickC Plus2)",
@@ -109,7 +109,7 @@
         "version": "Latest (webpage)",
         "author": "pr3y",
         "device": "ESP32-S3",
-        "manifest": "manifests/esp32-S3/Bruce/Bruce (M5Stack Cardputer).json"
+        "manifest": "manifests/ESP32-S3/Bruce/Bruce (M5Stack Cardputer).json"
     },
     {
         "name": "Bruce (M5StickCPlus 1.1)",

@@ -10,10 +10,9 @@ def main():
     firmware_name = input("Enter firmware name: ").strip()
     firmware_version = input("Enter firmware version: ").strip()
     firmware_author = input("Enter firmware author: ").strip()
-    firmware_target = input("Enter firmware target: ").strip()
 
 
-    firmware_name_manifest = f"{firmware_name} ({firmware_target})"
+    firmware_name_manifest = f"{firmware_name} ({chip})"
 
 
     # Define manifest structure
